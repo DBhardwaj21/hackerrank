@@ -95,5 +95,22 @@ for(int i=0;i<10;i++){
 return false;
 
 
+int n;
+ cout<<"Enter the number yu want to change to the binary digit" <<endl;
+ cin>>n;
+ int ans=0;
+ int i=0;
+ while(n!=0){
+     int bit =n%10;
+     if(bit==1){
+      ans = (bit * pow(2,i))+ ans;
+    
+     }
+     
+     n=n/10;
+     i++;
+
+ }
+ cout<<ans <<endl;
 
 
