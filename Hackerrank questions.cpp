@@ -81,6 +81,18 @@ int main() {
     return 0;
 }*/
     
+int n;
+cout<<"Enter n" <<endl;
+cin>> n;
+for(int i=0;i<10;i++){
+    int num=pow(2,i);
+    // cout<<num <<endl;
+    if(n==num){
+        return true;
+    }
+
+}
+return false;
 
 
 
